@@ -11,7 +11,12 @@
   #
   # Here are some potentially valid WAGs for filenames from other projects I've
   # run across online.
-  files: ['*-MIB.txt', '*.mib', '*.my']
+  files: |
+      (?x)^(
+          .+\-MIB\.txt|
+          .+\.mib|
+          .+\.my
+      )$
   require_serial: false
   description: >
     Check MIB files using the smilint utility from the libsmi project.

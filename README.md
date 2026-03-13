@@ -21,7 +21,12 @@ repos:
         # level from 3 to 6 to catch all reportable issues with MIB files.
         args: ['-sm', '-l', '6']
         # `files` is set to the following by default.
-        files: ['*-MIB.txt', '*.mib', '*.my']
+        files: |
+            (?x)^(
+                .+\-MIB\.txt|
+                .+\.mib|
+                .+\.my
+            )$
 ```
 
 ### The difficulty with `files`, `types`, and MIB files
