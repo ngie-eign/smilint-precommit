@@ -17,6 +17,9 @@ repos:
     rev: 1.0.0
     hooks:
       - id: smilint
+        # Use the hook-provided defaults flags, `-sm`, but also crank up the
+        # level from 3 to 6 to catch all reportable issues with MIB files.
+        args: ['-sm', '-l', '6']
         # `files` is set to the following by default.
         files: ['*-MIB.txt', '*.mib', '*.my']
 ```
