@@ -2,6 +2,7 @@
 - id: smilint
   name: smilint
   entry: smilint
+  language: system
   # Run `smilint` with `-sm`.
   args: ["-sm"]
   # Unfortunately SNMP lacks a single sane file extension, so `types` can't be
