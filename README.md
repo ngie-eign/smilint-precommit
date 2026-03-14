@@ -14,7 +14,7 @@ This integration requires pre-commit to function. See the
 ---
 repos:
   - repo: https://github.com/ngie-eign/pre-commit
-    rev: 1.0.0
+    rev: 1.0.1
     hooks:
       - id: smilint
         # Use the hook-provided defaults flags, `-sm`, but also crank up the
